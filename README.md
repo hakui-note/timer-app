@@ -1,7 +1,7 @@
-# Tauri + Vanilla
+# Simple Timer App 
 
-This template should help get you started developing with Tauri in vanilla HTML, CSS and Javascript.
+デスクトップアプリを開発してみたく、Tauriを使って.exeを作成し、windows上で動かせるようにしました。
 
-## Recommended IDE Setup
+初回ということでバックエンド部分はほとんど触らずに.rs内の不要な部分を削除しただけです。
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+フロントエンド部分だけでも分かれば使いこなせると思います。
