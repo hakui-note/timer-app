@@ -8,14 +8,8 @@ body {
   margin: 0
 }
 
-.timer-container {
-  text-align: center;
-  padding: 20px;
-}
-
-#time {
-  font-size: 48px;
-  margin: 20px 0;
+#container {
+  display: flex;
 }
 
 select {
@@ -37,4 +31,28 @@ button {
 
 button:hover {
   background-color: #45a049;
+}
+/* ---------- 切替ボタン ---------------- */
+#mode-toggle {
+  margin-bottom: 30px;
+}
+
+/* --------- タイマー ----------- */
+.timer-container {
+  text-align: center;
+  padding: 20px;
+}
+
+#time {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+/* ----------- ポモドーロ -------------- */
+#pomodoro-container {
+  text-align: center;
+  padding: 20px;
+}
+.hidden {
+  display: none;
 }

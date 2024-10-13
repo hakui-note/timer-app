@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"/>
     <title>タイマーアプリ</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="timer-container">
-        <h1>タイマー</h1>
-        <div>
+        <!-- タイマーとポモドーロを切り替えるボタンを追加-->
+        <button id="mode-toggle">ポモドーロモード切替</button>
+        <div id = "timer-mode">
             <select id="hours"></select>時間
             <select id="minutes"></select>分
             <select id="seconds"></select>秒
         </div>
         <div id="time">00:00:00</div>
-        <button id="start">スタート</button>
-        <button id="stop">ストップ</button>
-        <button id="reset">リセット</button>
+        
+        <!-- ボタン -->
+        <div id = "timer-button">
+            <button id="start">スタート</button>
+            <button id="stop">ストップ</button>
+            <button id="reset">リセット</button>
+        </div>
+        <!-- ポモドーロモードボタン -->
+        <div id="pomodoro-mode" class="hidden">
+            <button id="pomodoro">ポモドーロ開始</button>
+            <button id="pause">中断</button>
+            <div id="pomodoro-status"></div>
+        </div>
     </div>
-
     <audio id="alarm" src="alarm.mp3"></audio>
-
     <script src="script.js"></script>
 </body>
 </html>
-
 
